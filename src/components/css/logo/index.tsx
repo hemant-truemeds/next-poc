@@ -1,11 +1,12 @@
 import Image from "next/image";
+import logoPng from "@images/TrueLogo.png";
 import React from "react";
 
 export const Logo: React.FC = () => {
   return (
     <Image
       layout="fill"
-      src="https://www.truemeds.in/static/media/TrueLogoTemp.ea04f1b2.png"
+      src={logoPng}
       alt="nextjs"
       // width="96"
       // height="58"

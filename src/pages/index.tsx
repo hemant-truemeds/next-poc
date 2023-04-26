@@ -12,13 +12,7 @@ interface IProps {
 const Home: React.FC<IProps> = (props) => {
   const { data } = props;
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
-      }}
-    >
+    <>
       <Head>
         <title>Truemeds</title>
         <meta
@@ -26,10 +20,18 @@ const Home: React.FC<IProps> = (props) => {
           content="Looking for the best medicine half price? Look no further than Truemeds. We offer the best quality at the best prices, so you can save money and feel better."
         />
       </Head>
-      <Header />
-      <SearchSection />
-      <OfferCardSection apiCardData={data?.hits?.hits} />
-    </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
+      >
+        <Header />
+        <SearchSection />
+        <OfferCardSection apiCardData={data?.hits?.hits} />
+      </div>
+    </>
   );
 };
 
