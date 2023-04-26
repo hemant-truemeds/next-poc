@@ -2,7 +2,7 @@ import React from "react";
 import { GetServerSideProps } from "next";
 
 import { Cards, Footer, Header, Main } from "@components/css";
-// import SearchSection from "@components/searchSection/SearchSection";
+import SearchSection from "@components/searchSection/SearchSection";
 
 interface IProps {
   data: any;
@@ -20,10 +20,10 @@ const Home: React.FC<IProps> = (props) => {
       }}
     >
       <Header />
-      {/* <SearchSection /> */}
-      <Main />
+      <SearchSection />
+      {/* <Main />
       <Cards />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
