@@ -36,6 +36,18 @@
       ],
       "@public": [
         "public"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@constants": [
+        "src/constants"
+      ],
+      "@images/*": [
+        "src/images/*"
+      ],
+      "@images": [
+        "src/images"
       ]
     },
     "incremental": true
@@ -43,7 +55,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.json"
   ],
   "exclude": [
     "node_modules"
