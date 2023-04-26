@@ -1,8 +1,11 @@
 import React from "react";
 import { GetServerSideProps } from "next";
 
-import { Cards, Footer, Header, Main } from "@components/css";
+// import { Card, Cards, Footer, Header, Main } from "@components/css";
 import SearchSection from "@components/searchSection/SearchSection";
+import { Header } from "@components/header";
+// import OfferCard from "@components/card";
+import OfferCardSection from "@components/OfferCardSection";
 
 interface IProps {
   data: any;
@@ -21,6 +24,8 @@ const Home: React.FC<IProps> = (props) => {
     >
       <Header />
       <SearchSection />
+      <OfferCardSection apiCardData={data?.hits?.hits} />
+      {/* <OfferCard /> */}
       {/* <Main />
       <Cards />
       <Footer /> */}
