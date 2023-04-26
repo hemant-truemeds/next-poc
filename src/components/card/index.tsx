@@ -25,7 +25,7 @@ const OfferCard = (props: IProps) => {
             alt=""
           />
         </div>
-        <h4 className={styles.productTitle}>{name}</h4>
+        <h2 className={styles.productTitle}>{name}</h2>
         <hr />
         <div className={styles.infoWrapper}>
           <div className={styles.infoDisplay}>

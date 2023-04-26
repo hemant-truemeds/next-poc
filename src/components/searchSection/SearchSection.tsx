@@ -13,9 +13,9 @@ const SearchSection = () => {
     <div className={styles.searchSectionWrapper}>
       <div className={styles.searchTextWrapper}>
         <p className={styles.sayGoodBuy}>Say GoodBye to high medicine prices</p>
-        <h2 className={styles.comparePrices}>
+        <h1 className={styles.comparePrices}>
           Compare prices and save upto 51%
-        </h2>
+        </h1>
         <div className={styles.inputWrapper}>
           <div className={styles.location_inputContainer}>
             <div className={styles.locationContainer}>
