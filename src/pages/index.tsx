@@ -1,10 +1,8 @@
 import React from "react";
 import { GetServerSideProps } from "next";
-
-// import { Card, Cards, Footer, Header, Main } from "@components/css";
 import SearchSection from "@components/searchSection/SearchSection";
 import { Header } from "@components/header";
-// import OfferCard from "@components/card";
+import Head from "next/head";
 import OfferCardSection from "@components/OfferCardSection";
 
 interface IProps {
@@ -13,7 +11,6 @@ interface IProps {
 
 const Home: React.FC<IProps> = (props) => {
   const { data } = props;
-  // console.log(data?.hits?.hits);
   return (
     <div
       style={{
@@ -22,13 +19,16 @@ const Home: React.FC<IProps> = (props) => {
         minHeight: "100vh",
       }}
     >
+      <Head>
+        <title>Truemeds</title>
+        <meta
+          name="description"
+          content="Looking for the best medicine half price? Look no further than Truemeds. We offer the best quality at the best prices, so you can save money and feel better."
+        />
+      </Head>
       <Header />
       <SearchSection />
       <OfferCardSection apiCardData={data?.hits?.hits} />
-      {/* <OfferCard /> */}
-      {/* <Main />
-      <Cards />
-      <Footer /> */}
     </div>
   );
 };

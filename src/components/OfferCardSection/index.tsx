@@ -1,5 +1,6 @@
 import React from "react";
 import OfferCard from "@components/card";
+// const OfferCard = React.lazy(() => import("@components/card"));
 import img1 from "@images/GEMSOLINE-CAPSULE-15.webp";
 import img2 from "@images/MAXIRICH-GOLD-SOFT-GELATIN-CAPSULE.webp";
 import styles from "./offercardSection.module.scss";
@@ -12,6 +13,7 @@ const OfferCardSection = (props: IProps) => {
   const { apiCardData } = props;
 
   return (
+    // <React.Suspense fallback={<h1>Loading...</h1>}>
     <div className={styles.offerCardSectionWrapper}>
       {apiCardData?.map((item: any, index: number) => {
         return (
@@ -26,6 +28,7 @@ const OfferCardSection = (props: IProps) => {
         );
       })}
     </div>
+    // </React.Suspense>
   );
 };
 
