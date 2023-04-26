@@ -14,7 +14,7 @@ const Home: React.FC<IProps> = (props) => {
   return (
     <>
       <Head>
-        <title>Truemeds</title>
+        <title>Truemeds-nextjs-poc</title>
         <meta
           name="description"
           content="Looking for the best medicine half price? Look no further than Truemeds. We offer the best quality at the best prices, so you can save money and feel better."
