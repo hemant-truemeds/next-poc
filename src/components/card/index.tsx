@@ -18,6 +18,7 @@ const OfferCard = (props: IProps) => {
       <div className={styles.cardContainer}>
         <div className={styles.imgWrapper}>
           <Image
+            loading="lazy"
             src={img_url}
             width={100}
             height={100}

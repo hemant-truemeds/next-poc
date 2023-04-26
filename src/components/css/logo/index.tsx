@@ -5,6 +5,7 @@ import React from "react";
 export const Logo: React.FC = () => {
   return (
     <Image
+      loading="lazy"
       layout="fill"
       src={logoPng}
       alt="nextjs"
