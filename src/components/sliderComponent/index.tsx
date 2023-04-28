@@ -35,16 +35,16 @@ const SliderComponents = () => {
         modules={[Navigation, Pagination, A11y, Keyboard]}
       >
         <SwiperSlide>
-          <Image src={img1} alt="" />
+          <Image loading="lazy" src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={img2} alt="" />
+          <Image loading="lazy" src={img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={img3} alt="" />
+          <Image loading="lazy" src={img3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={img4} alt="" />
+          <Image loading="lazy" src={img4} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
