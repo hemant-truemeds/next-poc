@@ -5,14 +5,4 @@ module.exports = withPlugins([], {
     locales: ["en"],
     defaultLocale: "en",
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "www.truemeds.in",
-        port: "",
-        // pathname: "/account123/**",
-      },
-    ],
-  },
 });

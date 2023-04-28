@@ -6,6 +6,7 @@ import Head from "next/head";
 import OfferCardSection from "@components/OfferCardSection";
 import SliderComponents from "@components/sliderComponent";
 import Footer from "@components/footer";
+import SkeletonCustom from "@components/skeletonEffect";
 
 interface IProps {
   data: any;
@@ -27,19 +28,23 @@ const Home: React.FC<IProps> = (props) => {
           content="Looking for the best medicine half price? Look no further than Truemeds. We offer the best quality at the best prices, so you can save money and feel better."
         />
       </Head>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
-        }}
-      >
-        <Header />
-        <SearchSection />
-        <SliderComponents />
-        <OfferCardSection apiCardData={data?.hits?.hits} />
-        <Footer />
-      </div>
+      {data?.hits?.hits ? (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+          }}
+        >
+          <Header />
+          <SearchSection />
+          <SliderComponents />
+          <OfferCardSection apiCardData={data?.hits?.hits} />
+          <Footer />
+        </div>
+      ) : (
+        <SkeletonCustom width={`230px`} height={`250px`} />
+      )}
     </>
   );
 };

@@ -7,6 +7,7 @@ import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import "@styles/swiper.css";
+import "react-loading-skeleton/dist/skeleton.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
