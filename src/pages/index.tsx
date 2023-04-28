@@ -5,6 +5,7 @@ import { Header } from "@components/header";
 import Head from "next/head";
 import OfferCardSection from "@components/OfferCardSection";
 import SliderComponents from "@components/sliderComponent";
+import Footer from "@components/footer";
 
 interface IProps {
   data: any;
@@ -37,6 +38,7 @@ const Home: React.FC<IProps> = (props) => {
         <SearchSection />
         <SliderComponents />
         <OfferCardSection apiCardData={data?.hits?.hits} />
+        <Footer />
       </div>
     </>
   );
