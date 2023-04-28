@@ -1,4 +1,5 @@
 import { AppProps } from "next/app";
+import Script from "next/script";
 import "@styles/global.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <Head>
-        <script
+        <Script
           src="https://kit.fontawesome.com/1c4700fdde.js"
           crossOrigin="anonymous"
         />
