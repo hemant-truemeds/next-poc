@@ -16,6 +16,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     <>
       <Script
         strategy="lazyOnload"
+        async
+        defer
         src="https://kit.fontawesome.com/1c4700fdde.js"
         crossOrigin="anonymous"
       />
