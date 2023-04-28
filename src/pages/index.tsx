@@ -4,6 +4,7 @@ import SearchSection from "@components/searchSection/SearchSection";
 import { Header } from "@components/header";
 import Head from "next/head";
 import OfferCardSection from "@components/OfferCardSection";
+import SliderComponents from "@components/sliderComponent";
 
 interface IProps {
   data: any;
@@ -15,6 +16,11 @@ const Home: React.FC<IProps> = (props) => {
     <>
       <Head>
         <title>Truemeds-nextjs-poc</title>
+        <link
+          rel="shortcut icon"
+          href="/icons/favicon.png"
+          type="image/x-icon"
+        />
         <meta
           name="description"
           content="Looking for the best medicine half price? Look no further than Truemeds. We offer the best quality at the best prices, so you can save money and feel better."
@@ -29,6 +35,7 @@ const Home: React.FC<IProps> = (props) => {
       >
         <Header />
         <SearchSection />
+        <SliderComponents />
         <OfferCardSection apiCardData={data?.hits?.hits} />
       </div>
     </>
