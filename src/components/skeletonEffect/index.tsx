@@ -26,7 +26,8 @@ const SkeletonCustom = (props: IProps) => {
       }}
       className={styles.skeletonWrapper}
     >
-      <SkeletonTheme baseColor="rgba(229, 228, 226, 0.3)" highlightColor="#eee">
+      {/* <SkeletonTheme baseColor="rgba(229, 228, 226, 0.3)" highlightColor="#eee"> */}
+      <SkeletonTheme baseColor="red" highlightColor="blue">
         <Skeleton width={`100%`} height={`100%`} />
       </SkeletonTheme>
     </div>

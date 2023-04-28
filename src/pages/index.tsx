@@ -43,7 +43,7 @@ const Home: React.FC<IProps> = (props) => {
           <Footer />
         </div>
       ) : (
-        <SkeletonCustom width={`230px`} height={`250px`} />
+        <SkeletonCustom width={`100%`} height={`100vh`} />
       )}
     </>
   );
