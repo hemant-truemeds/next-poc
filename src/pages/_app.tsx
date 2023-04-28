@@ -14,12 +14,10 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
-      <Head>
-        <Script
-          src="https://kit.fontawesome.com/1c4700fdde.js"
-          crossOrigin="anonymous"
-        />
-      </Head>
+      <Script
+        src="https://kit.fontawesome.com/1c4700fdde.js"
+        crossOrigin="anonymous"
+      />
       <Component {...pageProps} />;
     </>
   );
